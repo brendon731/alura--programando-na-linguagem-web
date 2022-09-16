@@ -1,7 +1,7 @@
 document.querySelector("#burcar-pacientes").onclick = e =>{
     e.target.textContent = "carregando..."
     e.target.disabled = true
-    fetch("http://api-pacientes.herokuapp.com/paciente")
+    fetch("http://api-pacientes.herokuapp.com/pacientes")
     .then(res=>res.json())
     .then(pacientes=>{
         pacientes.forEach(paciente=>{
